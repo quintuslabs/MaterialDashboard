@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LogIn</title>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/login.css">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="transparent-bg">
+<div class="login">
+  <div class="login-triangle"></div>
+   <div class="login-header">
+      <center><img src="assets/images/password.svg" class="img-responsive img-circle " alt="User" width="70" > </center> 
+      <h2 >Log in</h2>
+   </div>
+
+  <form class="login-container">
+
+    <p><input type="email" placeholder="Email" required=""></p>
+    <p><input id="password-field" type="password" placeholder="Password" required=""><span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span></p>
+    <p><input type="submit" value="Log in"></p>
+  </form>
+</div>
+</div>
+<script>
+    $(".toggle-password").click(function() {
+
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+</script>
+</body>
+</html>

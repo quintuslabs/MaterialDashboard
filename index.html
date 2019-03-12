@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Matril Dashboard">
+        <meta name="author" content="Quintuslabs">
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <!-- App title -->
+        <title>Material Dashboard</title>
+
+        <!-- CSRF Token -->
+        <meta name="material dashboard" content="">
+
+        <!-- DataTables -->
+        <link href="assets/css/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/plugins/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/plugins/datatables/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <link href="assets/css/plugins/toast/jquery.toast.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/plugins/select2/select2.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/core.css" rel="stylesheet">
+        <link href="assets/css/components.css" rel="stylesheet">      
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Scripts -->
+
+        <script src="assets/js/modernizr.min.js"></script>
+        <script src="assets/js/chart.min.js"></script>
+
+    </head>
+
+    <body class="fixed-left">
+
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a href="index.html" class="logo">
+                        <span>
+                            <img src="assets/images/user.JPG" alt=""  class="thumb-md img-circle "> Santosh<span></span>
+                        </span>
+                        <i>
+                           <img src="assets/images/user.JPG" alt="" class="thumb-md img-rounded bg-white">
+                        </i>
+                    </a>
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+
+                        <!-- Navbar-left -->
+                        <ul class="nav navbar-nav navbar-left">
+                            <li>
+                                <button class="button-menu-mobile open-left waves-effect waves-light">
+                                    <i class="mdi mdi-menu"></i>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <!-- Right(Notification) -->
+                        <ul class="nav navbar-nav navbar-right">
+                             <li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-bell-o fa-2x"></i><span class="badge bg-red badge-corner">12</span></a>
+                                  <ul aria-labelledby="notifications" class="dropdown-menu">
+                                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                                        <div class="notification">
+                                          <div class="notification-content"><i class="fa fa-envelope bg-green"></i>You have 6 new messages </div>
+                                          <div class="notification-time"><small>4 minutes ago</small></div>
+                                        </div></a></li>
+                                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                                        <div class="notification">
+                                          <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have 2 followers</div>
+                                          <div class="notification-time"><small>4 minutes ago</small></div>
+                                        </div></a></li>
+                                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                                        <div class="notification">
+                                          <div class="notification-content"><i class="fa fa-upload bg-orange"></i>Server Rebooted</div>
+                                          <div class="notification-time"><small>4 minutes ago</small></div>
+                                        </div></a></li>
+                                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                                        <div class="notification">
+                                          <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have 2 followers</div>
+                                          <div class="notification-time"><small>10 minutes ago</small></div>
+                                        </div></a></li>
+                                    <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong>view all notifications                                            </strong></a></li>
+                                  </ul>
+                                </li>
+                            <li>
+                                <a href="javascript:void(0);" class=" right-menu-item" onclick="go_full_screen()">
+                                    <i class=" mdi mdi-arrow-expand-all"></i>
+                                </a>
+                            </li>
+                            <li><a href="login.html" class="nav-link logout"> <span class="d-none d-sm-inline">Logout</span><i class="fa fa-sign-out"></i></a></li>
+                            <li class="dropdown user-box">
+                                <a href="" class="dropdown-toggle waves-effect waves-light user-link" data-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets/images/user.JPG" alt="user-img" data-toggle="tooltip"  class="img-circle user-img">
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right user-list notify-list">
+                                    <li class="dropdown-header">Login as</li>
+                                    <li>
+                                        <a href="">
+                                            admin@gmail.com
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Profile</li>
+                                    <li><a href="#"><i class="ti-user m-r-5"></i> Change Password</a></li>
+                                    <li><a href="#" ><i class="ti-power-off m-r-5"></i> Logout</a></li>
+                                </ul>
+                            </li>
+
+                        </ul> <!-- end navbar-right -->
+
+                    </div><!-- end container -->
+                </div><!-- end navbar -->
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu"> 
+
+                        <ul>
+                            <li class="has_sub">
+                                <a href="index.html" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+
+                            <!-- <li class="menu-title">Customer Area</li> -->
+
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect"><i class="mdi mdi-table"></i> <span> Tables </span></a>                                
+                            </li>
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect"><i class="mdi mdi-chart-bar"></i> <span> Chart </span> </a>
+                            </li>
+
+                           <!--  <li class="menu-title">Staff Area</li> -->
+
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect"><i class="mdi mdi-file-document-box"></i> <span> Forms </span></a>
+                                
+                            </li>
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-cash-multiple"></i> <span> Pages </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="login.html">Login Page</a></li>
+                                    <li><a href="register.html">Register Page</a></li>
+                                </ul>
+                            </li>
+
+                            
+                           
+                            
+                        </ul>
+                    </div>
+                    <!-- Sidebar -->
+                    
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                                        <!-- Page Header-->
+                        <header class="page-header">
+                           <div class="container-fluid">
+                              <h2 class="no-margin-bottom">Dashboard</h2>
+                            </div>
+                        </header>
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container">
+
+                      <!-- Dashboard Counts Section-->
+
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-box widget-box-two widget-two-success">
+                                    <i class="mdi  mdi mdi-account-multiple widget-two-icon"></i>
+                                    <div class="wigdet-two-content text-white">
+                                        <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="ORDER READY">Clients</p>
+                                        <h2 class="text-white counter" data-count="150">0</span></h2>
+                                        <p class="m-0"><b>Total</b></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-box widget-box-two widget-two-warning">
+                                    <i class="mdi mdi-briefcase-download widget-two-icon"></i>
+                                    <div class="wigdet-two-content text-white">
+                                        <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="Statistics">projects</p>
+                                         <h2 class="text-white counter" data-count="1500">0</span></h2>
+                                        <p class="m-0"><b>Tolal</b></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-box widget-box-two widget-two-danger">
+                                    <i class="mdi mdi-square-inc-cash widget-two-icon"></i>
+                                    <div class="wigdet-two-content text-white">
+                                        <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="Statistics">payment DUE</p>
+                                        <h2 class="text-white counter" data-count="3250">0</span></h2>
+                                        <p class="m-0"><b>Total</b></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-box widget-box-two widget-two-info">
+                                    <i class="mdi mdi-account-convert widget-two-icon"></i>
+                                    <div class="wigdet-two-content text-white">
+                                        <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="Statistics">STAFF</p>
+                                         <h2 class="text-white counter" data-count="50">0</span></h2>
+                                        <p class="m-0"><b>Total</b></p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                       <!-- Count section end -->
+
+                        <!-- chart section start  -->
+
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <div class="col-md-12">                                     
+                                        
+                                            <div class="card-box">
+                                                 <div class="icon bg-red"><i class="fa fa-tasks"></i></div>
+                                                 <div class="text"><strong>234</strong><br><small>Applications</small></div>
+                                            </div>
+                                             <div class="card-box">
+                                               <div class="icon bg-green"><i class="fa fa-calendar-o"></i></div>
+                                               <div class="text"><strong>152</strong><br><small>Interviews</small></div>
+                                            </div>
+                                            <div class="card-box">
+                                                <div class="icon bg-orange"><i class="fa fa-paper-plane-o"></i></div>
+                                                <div class="text"><strong>147</strong><br><small>Forwards</small></div>
+                                            </div>
+                                        </div>        
+      
+                                    </div>
+                                </div>
+                           
+                            <div class="col-md-4">
+                                <div class="card-box">
+                                    <h4 class="header-title m-t-0 ">Doughnut Chart</h4>
+                                    <canvas id="myChart" width="50%" height="50%"></canvas>
+                                    <script>
+                                        new Chart(document.getElementById("myChart"), {
+                                            type: 'doughnut',
+                                            data: {
+                                                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                                                datasets: [{
+                                                label: "My First dataset",
+                                                backgroundColor: ["#70b9eb", "#f3b760","#46c37b","#f5707a","#B22222","#FF6347","#FFD700 "],
+                                                
+                                                data: [0, 10, 5, 2, 20, 30, 45],
+                                                }]
+                                            },
+                                           options: {
+                                                title: {
+                                                    display: false,
+                                                    text: 'Order Chart'
+                                                }
+                                            }
+                                        });
+                                    </script>
+                                </div>
+
+                            </div>
+                             <div class="col-lg-4 col-12">                             
+                                <div class="row">
+                                    <div class="col-md-12">
+                                         <div class="card-box">
+                                    <h4 class="header-title m-t-0 ">CHART</h4>
+                                    <canvas id="pieChart" width="50%"></canvas>
+                                    <script>
+                                        new Chart(document.getElementById("pieChart"), {
+                                            type: 'line',
+                                            data: {
+                                                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                                                datasets: [{
+                                                label: "My First dataset",
+                                                backgroundColor: ["#70b9eb", "#f3b760","#46c37b","#f5707a","#B22222","#FF6347","#FFD700 "],
+                                                
+                                                data: [0, 10, 5, 2, 20, 30, 45],
+                                                }]
+                                            },
+                                           options: {
+                                                title: {
+                                                    display: false,
+                                                    text: 'Order Chart'
+                                                }
+                                            }
+                                        });
+                                    </script>
+                                </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-box">
+                                    <div class="icon bg-red"><i class="fa fa-line-chart"></i></div>
+                                    <div class="text"><strong>234</strong><br><small>Applications</small></div>
+                                </div>
+                            </div>
+                        </div> 
+                        <!-- chart section end  -->
+                         <!-- Projects Section-->
+                         <section class="projects no-padding-top">
+                            <div class="container-fluid">
+                              <!-- Project-->
+                              <div class="project">
+                                  <div class="row card-box">
+                                      <div class="col-lg-6">
+                                            <div class="row">
+                                             <div class="col-md-8">
+                                                <div class="image col-lg-3" style=""><img src="assets/images/project-1.jpg" alt="..." class="img-fluid"></div>
+                                                 <div class="text">
+                                                     <h3 class="h4 col-md-9">Project Title</h3><small>Lorem Ipsum Dolor</small>
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-4"><span class="hidden-sm-down">Today at 4:24 AM</span></div>
+                                            </div>    
+                                        </div>
+                                        <div class="right-col col-lg-6 d-flex align-items-center">
+                                            <div class="row">
+                                                <div class="time col-md-4"><i class="fa fa-clock-o"></i>12:00 PM </div>
+                                            
+                                                  <div class="project-progress col-md-8">
+                                                      <div class="progress">
+                                                          <div role="progressbar" style="width: 35%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-red"></div>
+                                                      </div>
+                                                  </div>
+                                            </div>
+                                         </div>
+                                    </div>
+                               </div>
+                              <!-- Project-->
+                              <div class="project">
+                                  <div class="row card-box">
+                                      <div class="col-lg-6">
+                                            <div class="row">
+                                             <div class="col-md-8">
+                                                <div class="image col-lg-3" style=""><img src="assets/images/project-1.jpg" alt="..." class="img-fluid"></div>
+                                                 <div class="text">
+                                                     <h3 class="h4 col-md-9">Project Title</h3><small>Lorem Ipsum Dolor</small>
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-4"><span class="hidden-sm-down">Today at 4:24 AM</span></div>
+                                            </div>    
+                                        </div>
+                                        <div class="right-col col-lg-6 d-flex align-items-center">
+                                            <div class="row">
+                                                <div class="time col-md-4"><i class="fa fa-clock-o"></i>12:00 PM </div>
+                                            
+                                                  <div class="project-progress col-md-8">
+                                                      <div class="progress">
+                                                          <div role="progressbar" style="width: 75%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-violet"></div>
+                                                      </div>
+                                                  </div>
+                                            </div>
+                                         </div>
+                                    </div>
+                               </div>
+                              <!-- Project-->
+                              <div class="project">
+                                  <div class="row card-box">
+                                      <div class="col-lg-6">
+                                            <div class="row">
+                                             <div class="col-md-8">
+                                                <div class="image col-lg-3" style=""><img src="assets/images/project-1.jpg" alt="..." class="img-fluid"></div>
+                                                 <div class="text">
+                                                     <h3 class="h4 col-md-9">Project Title</h3><small>Lorem Ipsum Dolor</small>
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-4"><span class="hidden-sm-down">Today at 4:24 AM</span></div>
+                                            </div>    
+                                        </div>
+                                        <div class="right-col col-lg-6 d-flex align-items-center">
+                                            <div class="row">
+                                                <div class="time col-md-4"><i class="fa fa-clock-o"></i>12:00 PM </div>
+                                            
+                                                  <div class="project-progress col-md-8">
+                                                      <div class="progress">
+                                                          <div role="progressbar" style="width: 45%; height: 6px;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-green"></div>
+                                                      </div>
+                                                  </div>
+                                            </div>
+                                         </div>
+                                    </div>
+                               </div>
+                           </div>
+                       </section>
+                           <!--  project end -->
+
+                            <!-- Updates Section -->
+                                <!-- <div class="row">
+                                    <div class="col-lg-6 col-md-10">
+                                        <div class="card-box">
+                                            
+                                        </div>
+                                     </div>
+                                    <div class="col-lg-6 col-md-10">
+                                        <div class="card-box">
+                                            
+
+                                        </div>
+                                     </div>
+
+                                </div>     --> 
+
+                               
+                          
+                           <!--  logo slider -->
+
+                            <div class="row card-box">
+                                <div class="col-md-12">
+                                        <div id="Carousel" class="carousel slide">
+                                         
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#Carousel" data-slide-to="1"></li>
+                                            <li data-target="#Carousel" data-slide-to="2"></li>
+                                        </ol>
+                                         
+                                        <!-- Carousel items -->
+                                        <div class="carousel-inner">
+                                            
+                                        <div class="item active">
+                                            <div class="row">
+                                              <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/images/logo/logo1.png" alt="Image" style="max-width:100%;"></a></div>
+                                              <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/images/logo/logo6.png" alt="Image" style="max-width:100%;"></a></div>
+                                              <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/images/logo/logo3.png" alt="Image" style="max-width:100%;"></a></div>
+                                              <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/images/logo/logo4.png" alt="Image" style="max-width:100%; "></a></div>
+                                            </div><!--.row-->
+                                        </div><!--.item-->
+                                         
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/images/logo/logo5.png" alt="Image" style="max-width:100%;"></a></div>
+                                                <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/images/logo/logo6.png" alt="Image" style="max-width:100%;"></a></div>
+                                                <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                                                <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                                            </div><!--.row-->
+                                        </div><!--.item-->
+                                         
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                                                <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                                                <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                                                <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+                                            </div><!--.row-->
+                                        </div><!--.item-->
+                                         
+                                        </div><!--.carousel-inner-->
+                                          <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
+                                          <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
+                                        </div><!--.Carousel-->
+                                         
+                                </div>
+                            </div>
+
+                           <!--  logo slider end -->
+                           
+
+
+                     </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <footer class="footer text-right">
+                   2019 © <span class="text-danger">Material Dashboard v1.1.</span>
+                    <span class="pull-right">
+                        <i class="fa fa-heart text- text-danger"></i> by <span class="text-danger">Quintulabs.com</span>
+                    </span>
+                </footer>
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+        </div>
+        <!-- END wrapper -->
+
+        <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <script src="assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/js/plugins/datatables/dataTables.bootstrap.js"></script>
+        <script src="assets/js/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="assets/js/plugins/datatables/buttons.bootstrap.min.js"></script>
+        <script src="assets/js/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="assets/js/plugins/datatables/responsive.bootstrap.min.js"></script>
+
+        <script src="assets/js/plugins/toast/jquery.toast.js" type="text/javascript"></script>
+        <script src="assets/js/plugins/select2/select2.min.js" type="text/javascript"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+        <script src="assets/js/custom.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#datatable').DataTable();
+            });
+
+            // Select2
+            $(".select2").select2();
+        </script>
+
+    </body>
+</html>
