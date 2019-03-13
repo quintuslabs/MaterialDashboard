@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Matril Dashboard">
+        <meta name="author" content="Quintuslabs">
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <!-- App title -->
+        <title>Material Dashboard</title>
+
+        <!-- CSRF Token -->
+        <meta name="material dashboard" content="">
+
+        <!-- DataTables -->
+        <link href="assets/css/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/plugins/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/plugins/datatables/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <link href="assets/css/plugins/toast/jquery.toast.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/plugins/select2/select2.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/core.css" rel="stylesheet">
+        <link href="assets/css/components.css" rel="stylesheet">      
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Scripts -->
+
+        <script src="assets/js/modernizr.min.js"></script>
+        <script src="assets/js/chart.min.js"></script>
+
+    </head>
+
+    <body class="fixed-left">
+
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a href="index.html" class="logo">
+                        <span>
+                            <img src="assets/images/user.JPG" alt=""  class="thumb-md img-circle "> Santosh<span></span>
+                        </span>
+                        <i>
+                           <img src="assets/images/user.JPG" alt="" class="thumb-md img-rounded bg-white">
+                        </i>
+                    </a>
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+
+                        <!-- Navbar-left -->
+                        <ul class="nav navbar-nav navbar-left">
+                            <li>
+                                <button class="button-menu-mobile open-left waves-effect waves-light">
+                                    <i class="mdi mdi-menu"></i>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <!-- Right(Notification) -->
+                        <ul class="nav navbar-nav navbar-right">
+                             <li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-bell-o fa-2x"></i><span class="badge bg-red badge-corner">12</span></a>
+                                  <ul aria-labelledby="notifications" class="dropdown-menu">
+                                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                                        <div class="notification">
+                                          <div class="notification-content"><i class="fa fa-envelope bg-green"></i>You have 6 new messages </div>
+                                          <div class="notification-time"><small>4 minutes ago</small></div>
+                                        </div></a></li>
+                                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                                        <div class="notification">
+                                          <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have 2 followers</div>
+                                          <div class="notification-time"><small>4 minutes ago</small></div>
+                                        </div></a></li>
+                                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                                        <div class="notification">
+                                          <div class="notification-content"><i class="fa fa-upload bg-orange"></i>Server Rebooted</div>
+                                          <div class="notification-time"><small>4 minutes ago</small></div>
+                                        </div></a></li>
+                                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                                        <div class="notification">
+                                          <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have 2 followers</div>
+                                          <div class="notification-time"><small>10 minutes ago</small></div>
+                                        </div></a></li>
+                                    <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong>view all notifications                                            </strong></a></li>
+                                  </ul>
+                                </li>
+                            <li>
+                                <a href="javascript:void(0);" class=" right-menu-item" onclick="go_full_screen()">
+                                    <i class=" mdi mdi-arrow-expand-all"></i>
+                                </a>
+                            </li>
+                            <li class="dropdown user-box">
+                                <a href="" class="dropdown-toggle waves-effect waves-light user-link" data-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets/images/user.JPG" alt="user-img" data-toggle="tooltip"  class="img-circle user-img">
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right user-list notify-list">
+                                    <li class="dropdown-header">Login as</li>
+                                    <li>
+                                        <a href="profile.html">
+                                            admin@gmail.com
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Profile</li>
+                                    <li><a href="#"><i class="ti-user m-r-5"></i> Change Password</a></li>
+                                    <li><a href="login.html" ><i class="ti-power-off m-r-5"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul> <!-- end navbar-right -->
+
+                    </div><!-- end container -->
+                </div><!-- end navbar -->
+            </div>
+            <!-- Top Bar End -->
+
+
+            
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu"> 
+
+                        <ul>
+                            <li class="has_sub">
+                                <a href="index.html" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+
+                             <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-view-grid"></i> <span>Components </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="grids.html">Grids</a></li>
+                                    <li><a href="media-css.html">Media Css</a></li>
+                                </ul>
+                            </li> 
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-layers"></i> <span>UI Elements </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="general.html">General</a></li>
+                                    <li><a href="icons.html">Iocns</a></li>
+                                    <li><a href="buttons.html">Buttons</a></li>
+                                    <li><a href="typography.html">Typography</a></li>
+                                </ul>
+                            </li> 
+
+                            <li class="has_sub">
+                                <a href="tables.html" class="waves-effect"><i class="mdi mdi-table"></i> <span> Tables </span></a>                                
+                            </li>
+                            <li class="has_sub">
+                                <a href="chart.html" class="waves-effect"><i class="mdi mdi-chart-bar"></i> <span> Chart </span> </a>
+                            </li>
+                            <li class="has_sub">
+                                <a href="widgets.html" class="waves-effect"><i class="mdi mdi-buffer"></i> <span> Widgets </span> </a>
+                            </li>
+
+                           <!--  <li class="menu-title">Staff Area</li> -->
+
+                           <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-file-document"></i> <span> Forms </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="general-form.html">General Form</a></li>
+                                    <li><a href="validation-form.html">Validation Form</a></li>
+                                </ul>
+                            </li>  
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-file-multiple"></i> <span> Pages </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="login.html">Login Page</a></li>
+                                    <li><a href="register.html">Register Page</a></li>
+                                </ul>
+                            </li>  
+                        </ul>
+                    </div>
+                    <!-- Sidebar -->
+                    
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                                        <!-- Page Header-->
+                        <header class="page-header">
+                           <div class="container-fluid">
+                              <h2 class="no-margin-bottom">Icons</h2>
+                            </div>
+                        </header>
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container">
+
+                      <!-- Dashboard Counts Section-->
+
+                        
+                          <section id="new">
+                               <div class="card-box">
+                                    <h3 class="page-header page-header icon-subheading">30 New Icons </h3>                            
+
+                                    <div class="row fontawesome-icon-list">
+                                        
+                                        
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-asl-interpreting" aria-hidden="true"></i> fa-asl-interpreting <span class="text-muted">(alias)</span></a></div>
+                                        
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-assistive-listening-systems" aria-hidden="true"></i> fa-assistive-listening-systems</a></div>
+                                        
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-audio-description" aria-hidden="true"></i> fa-audio-description</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-blind" aria-hidden="true"></i> fa-blind</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-braille" aria-hidden="true"></i> fa-braille</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-deaf" aria-hidden="true"></i> fa-deaf</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-deafness" aria-hidden="true"></i> deafness <span class="text-muted">(alias)</span></a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-envira" aria-hidden="true"></i> fa-envira</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-fa" aria-hidden="true"></i> fa-fa <span class="text-muted">(alias)</span></a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-first-order" aria-hidden="true"></i> fa-first-order</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-font-awesome" aria-hidden="true"></i> fa-font-awesome</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-gitlab" aria-hidden="true"></i> fa-gitlab</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-glide" aria-hidden="true"></i> fa-glide</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-glide-g" aria-hidden="true"></i> fa-glide-g</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-google-plus-circle" aria-hidden="true"></i> fa-google-plus-circle <span class="text-muted">(alias)</span></a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i> fa-google-plus-official</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-hard-of-hearing" aria-hidden="true"></i> fa-hard-of-hearing <span class="text-muted">(alias)</span></a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-instagram" aria-hidden="true"></i> fa-instagram</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-low-vision" aria-hidden="true"></i> fa-low-vision</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-pied-piper" aria-hidden="true"></i> fa-pied-piper</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i> fa-question-circle-o</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-sign-language" aria-hidden="true"></i> fa-sign-language</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-signing" aria-hidden="true"></i> fa-signing <span class="text-muted">(alias)</span></a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-snapchat" aria-hidden="true"></i> fa-snapchat</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i> fa-snapchat-ghost</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-snapchat-square" aria-hidden="true"></i> fa-snapchat-square</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-themeisle" aria-hidden="true"></i> fa-themeisle</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-universal-access" aria-hidden="true"></i> fa-universal-access</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-viadeo" aria-hidden="true"></i> fa-viadeo</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-viadeo-square" aria-hidden="true"></i> fa-viadeo-square</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> fa-volume-control-phone</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-wheelchair-alt" aria-hidden="true"></i> fa-wheelchair-alt</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-wpbeginner" aria-hidden="true"></i> fa-wpbeginner</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-wpforms" aria-hidden="true"></i> fa-wpforms</a></div>
+                                        
+                                          <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-yoast" aria-hidden="true"></i> fa-yoast</a></div>                                        
+                                       </div>
+                                    </div>
+                                </section>
+                                <div class="card-box"> 
+                                    <div class="box_content">  
+                                        <div class="title ">
+                                          <h3 class="page-header icon-subheading">Material Icons</h3>
+                                        </div>
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-access-point"></i> mdi-access-point</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa mdi-account"></i> mdi-account</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-archive"></i> mdi-archive</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-arrow-all"></i> mdi-arrow-all</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-arrows-h"></i> mdi-arrows-h</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-arrows-v"></i> mdi-arrows-v</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-asterisk"></i> mdi-asterisk</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-ban"></i> mdi-ban</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-bar-chart-o"></i> mdi-bar-chart-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-barcode"></i> mdi-barcode</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-bars"></i> mdi-bars</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-beer"></i> mdi-beer</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-bell"></i> mdi-bell</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-bell-o"></i> mdi-bell-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-bolt"></i> mdi-bolt</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-book"></i> mdi-book</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-bookmark"></i> mdi-bookmark</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-bookmark-o"></i> mdi-bookmark-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-briefcase"></i> mdi-briefcase</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-bug"></i> mdi-bug</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-building-o"></i> mdi-building-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-bullhorn"></i> mdi-bullhorn</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-bullseye"></i> mdi-bullseye</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-calendar"></i> mdi-calendar</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-calendar-o"></i> mdi-calendar-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-camera"></i> mdi-camera</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-camera-retro"></i> mdi-camera-retro</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-caret-square-o-down"></i> mdi-caret-square-o-down</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-caret-square-o-left"></i> mdi-caret-square-o-left</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-caret-square-o-right"></i> mdi-caret-square-o-right</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-caret-square-o-up"></i> mdi-caret-square-o-up</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-certificate"></i> mdi-certificate</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-check"></i> mdi-check</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-check-circle"></i> mdi-check-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-check-circle-o"></i> mdi-check-circle-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-check-square"></i> mdi-check-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-check-square-o"></i> mdi-check-square-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-circle"></i> mdi-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-angle-right"></i> mdi-angle-right</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-clock-o"></i> mdi-clock-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-cloud"></i> mdi-cloud</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-cloud-download"></i> mdi-cloud-download</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-cloud-upload"></i> mdi-cloud-upload</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-code"></i> mdi-code</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-code-fork"></i> mdi-code-fork</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-coffee"></i> mdi-coffee</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-cog"></i> mdi-cog</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-cogs"></i> mdi-cogs</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-comment"></i> mdi-comment</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-comment-o"></i> mdi-comment-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-comments"></i> mdi-comments</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-comments-o"></i> mdi-comments-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-compass"></i> mid-compass</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-credit-card"></i> mdi-credit-card</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-crop"></i> mdi-crop</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-crosshairs"></i> mdi-crosshairs</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-cutlery"></i> mdi-cutlery</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-dashboard"></i> mdi-dashboard <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-desktop"></i> mdi-desktop</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-dot-circle-o"></i> mdi-dot-circle-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-download"></i> mdi-download</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-edit"></i> mdi-edit <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-ellipsis-h"></i> mdi-ellipsis-h</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-ellipsis-v"></i> mdi-ellipsis-v</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-envelope"></i> mdi-envelope</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-envelope-o"></i> mdi-envelope-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-eraser"></i> mdi-eraser</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-exchange"></i> mdi-exchange</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-exclamation"></i> mdi-exclamation</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-exclamation-circle"></i> mdi-exclamation-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-exclamation-triangle"></i> mdi-exclamation-triangle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-external-link"></i> mdi-external-link</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-external-link-square"></i> mdi-external-link-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-eye"></i> mdi-eye</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-eye-slash"></i> mdi-eye-slash</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-female"></i> mdi-female</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-fighter-jet"></i> mdi-fighter-jet</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-film"></i> mdi-film</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-filter"></i> mdi-filter</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-fire"></i> mdi-fire</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-fire-extinguisher"></i> mdi-fire-extinguisher</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-flag"></i> mdi-flag</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-flag-checkered"></i> mdi-flag-checkered</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-flag-o"></i> mdi-flag-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-flash"></i> mdi-flash <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-flask"></i> mdi-flask</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-folder"></i> mdi-folder</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-folder-o"></i> mdi-folder-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-folder-open"></i> mdi-folder-open</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-folder-open-o"></i> mdi-folder-open-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-frown-o"></i> mdi-frown-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-gamepad"></i> mdi-gamepad</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-gavel"></i> mdi-gavel</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-gear"></i> mdi-gear <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-gears"></i> mdi-gears <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-gift"></i> mdi-gift</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-glass"></i> mdi-glass</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-globe"></i> mdi-globe</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-group"></i> mdi-group <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-hdd-o"></i> mdi-hdd-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-headphones"></i> mdi-headphones</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-heart"></i> mdi-heart</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-heart-o"></i> mdi-heart-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-home"></i> mdi-home</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-inbox"></i> mdi-inbox</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="mdi mdi-info"></i> mdi-info</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#info-circle"><i class="mdi mdi-info-circle"></i> mdi-info-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#key"><i class="mdi mdi-key"></i> mdi-key</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#keyboard-o"><i class="mdi mdi-keyboard-o"></i> mdi-keyboard-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#laptop"><i class="mdi mdi-laptop"></i> mdi-laptop</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#leaf"><i class="mdi mdi-leaf"></i> mdi-leaf</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#gavel"><i class="mdi mdi-legal"></i> mdi-legal <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#lemon-o"><i class="mdi mdi-lemon-o"></i> mdi-lemon-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#level-down"><i class="mdi mdi-level-down"></i> mdi-level-down</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#level-up"><i class="mdi mdi-level-up"></i> mdi-level-up</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#lightbulb-o"><i class="mdi mdi-lightbulb-o"></i> mdi-lightbulb-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#location-arrow"><i class="mdi mdi-location-arrow"></i> mdi-location-arrow</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#lock"><i class="mdi mdi-lock"></i> mdi-lock</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#magic"><i class="mdi mdi-magic"></i> mdi-magic</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#magnet"><i class="mdi mdi-magnet"></i> mdi-magnet</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#share"><i class="mdi mdi-mail-forward"></i> mdi-mail-forward <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#reply"><i class="mdi mdi-mail-reply"></i> mdi-mail-reply <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#mail-reply-all"><i class="mdi mdi-mail-reply-all"></i> mdi-mail-reply-all</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#male"><i class="mdi mdi-male"></i> mdi-male</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#map-marker"><i class="mdi mdi-map-marker"></i> mdi-map-marker</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#meh-o"><i class="mdi mdi-meh-o"></i> mdi-meh-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#microphone"><i class="mdi mdi-microphone"></i> mdi-microphone</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#microphone-slash"><i class="mdi mdi-microphone-slash"></i> mdi-microphone-slash</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#minus"><i class="mdi mdi-minus"></i> mdi-minus</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#minus-circle"><i class="mdi mdi-minus-circle"></i> mdi-minus-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#minus-square"><i class="mdi mdi-minus-square"></i> mdi-minus-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#minus-square-o"><i class="mdi mdi-minus-square-o"></i> mdi-minus-square-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#mobile"><i class="mdi mdi-mobile"></i> mdi-mobile</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#mobile"><i class="mdi mdi-mobile-phone"></i> mdi-mobile-phone <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#money"><i class="mdi mdi-money"></i> mdi-money</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#moon-o"><i class="mdi mdi-moon-o"></i> mdi-moon-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#music"><i class="mdi mdi-music"></i> mdi-music</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#pencil"><i class="mdi mdi-pencil"></i> mdi-pencil</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#pencil-square"><i class="mdi mdi-pencil-square"></i> mdi-pencil-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#pencil-square-o"><i class="mdi mdi-pencil-square-o"></i> mdi-pencil-square-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#phone"><i class="mdi mdi-phone"></i> mdi-phone</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#phone-square"><i class="mdi mdi-phone-square"></i> mdi-phone-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#picture-o"><i class="mdi mdi-picture-o"></i> mdi-picture-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#plane"><i class="mdi mdi-plane"></i> mdi-plane</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#plus"><i class="mdi mdi-plus"></i> mdi-plus</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#plus-circle"><i class="mdi mdi-plus-circle"></i> mdi-plus-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#plus-square"><i class="mdi mdi-plus-square"></i> mdi-plus-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#plus-square-o"><i class="mdi mdi-plus-square-o"></i> mdi-plus-square-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#power-off"><i class="mdi mdi-power-off"></i> mdi-power-off</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#print"><i class="mdi mdi-print"></i> mdi-print</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#puzzle-piece"><i class="mdi mdi-puzzle-piece"></i> mdi-puzzle-piece</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#qrcode"><i class="mdi mdi-qrcode"></i> mdi-qrcode</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#question"><i class="mdi mdi-question"></i> mdi-question</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#question-circle"><i class="mdi mdi-question-circle"></i> mdi-question-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#quote-left"><i class="mid mdi-quote-left"></i> mdi-quote-left</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#quote-right"><i class="mdi mdi-quote-right"></i> mdi-quote-right</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#random"><i class="mdi mdi-random"></i> mdi-random</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#refresh"><i class="mdi mdi-refresh"></i> mdi-refresh</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#reply"><i class="mdi mdi-reply"></i> mdi-reply</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#reply-all"><i class="mdi mdi-reply-all"></i> mdi-reply-all</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#retweet"><i class="mdi mdi-retweet"></i> mdi-retweet</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#road"><i class="mdi mdi-road"></i> mdi-road</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#rocket"><i class="mdi mdi-rocket"></i> mdi-rocket</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#rss"><i class="mdi mdi-rss"></i> mdi-rss</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#rss-square"><i class="mdi mdi-rss-square"></i> mdi-rss-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#search"><i class="mdi mdi-search"></i> mdi-search</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#search-minus"><i class="mdi mdi-search-minus"></i> mdi-search-minus</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#search-plus"><i class="mdi mdi-search-plus"></i> mdi-search-plus</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#share"><i class="mdi mdi-share"></i> mdi-share</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#share-square"><i class="mdi mdi-share-square"></i> mdi-share-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#share-square-o"><i class="mdi mdi-share-square-o"></i> mdi-share-square-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#shield"><i class="mdi mdi-shield"></i> mdi-shield</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#shopping-cart"><i class="mdi mdi-shopping-cart"></i> mdi-shopping-cart</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sign-in"><i class="mdi mdi-sign-in"></i> mdi-sign-in</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sign-out"><i class="mdi mdi-sign-out"></i> mdi-sign-out</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#signal"><i class="mdi mdi-signal"></i> mdi-signal</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sitemap"><i class="mdi mdi-sitemap"></i> mdi-sitemap</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#smile-o"><i class="mdi mdi-smile-o"></i> mdi-smile-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort"><i class="mdi mdi-sort"></i> mdi-sort</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-alpha-asc"><i class="mdi mdi-sort-alpha-asc"></i> mdi-sort-alpha-asc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-alpha-desc"><i class="mdi mdi-sort-alpha-desc"></i> mdi-sort-alpha-desc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-amount-asc"><i class="mdi mdi-sort-amount-asc"></i> mdi-sort-amount-asc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-amount-desc"><i class="mdi mdi-sort-amount-desc"></i> mdi-sort-amount-desc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-asc"><i class="mdi mdi-sort-asc"></i> mdi-sort-asc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-desc"><i class="mdi mdi-sort-desc"></i> mdi-sort-desc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-asc"><i class="mdi mdi-sort-down"></i> mdi-sort-down <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-numeric-asc"><i class="mdi mdi-sort-numeric-asc"></i> mdi-sort-numeric-asc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-numeric-desc"><i class="mdi mdi-sort-numeric-desc"></i> mdi-sort-numeric-desc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-desc"><i class="mdi mdi-sort-up"></i> mdi-sort-up <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#spinner"><i class="mdi mdi-spinner"></i> mdi-spinner</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#square"><i class="mdi mdi-square"></i> mdi-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#square-o"><i class="mdi mdi-square-o"></i> mdi-square-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#star"><i class="mdi mdi-star"></i> mdi-star</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#star-half"><i class="mdi mdi-star-half"></i> mdi-star-half</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#star-half-o"><i class="mdi mdi-star-half-empty"></i> mdi-star-half-empty <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#star-half-o"><i class="mdi mdi-star-half-full"></i> mdi-star-half-full <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#star-half-o"><i class="mdi mdi-star-half-o"></i> mdi-star-half-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#star-o"><i class="mdi mdi-star-o"></i> mdi-star-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#subscript"><i class="mdi mdi-subscript"></i> mdi-subscript</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#suitcase"><i class="mdi mdi-suitcase"></i> mdi-suitcase</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sun-o"><i class="mdi mdi-sun-o"></i> mdi-sun-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#superscript"><i class="mdi mdi-superscript"></i> mdi-superscript</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#tablet"><i class="mdi mdi-tablet"></i> mdi-tablet</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#tachometer"><i class="mdi mdi-tachometer"></i> mdi-tachometer</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#tag"><i class="mdi mdi-tag"></i> mdi-tag</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#tags"><i class="mdi mdi-tags"></i> mdi-tags</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#tasks"><i class="mdi mdi-tasks"></i> mdi-tasks</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#terminal"><i class="mdi mdi-terminal"></i> mdi-terminal</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#thumb-tack"><i class="mdi mdi-thumb-tack"></i> mdi-thumb-tack</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#thumbs-down"><i class="mdi mdi-thumbs-down"></i> mdi-thumbs-down</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#thumbs-o-down"><i class="mdi mdi-thumbs-o-down"></i> mdi-thumbs-o-down</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#thumbs-o-up"><i class="mdi mdi-thumbs-o-up"></i> mdi-thumbs-o-up</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#thumbs-up"><i class="mdi mdi-thumbs-up"></i> mdi-thumbs-up</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#ticket"><i class="mdi mdi-ticket"></i> mdi-ticket</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#times"><i class="mdi mdi-times"></i> mdi-times</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#times-circle"><i class="mdi mdi-times-circle"></i> mdi-times-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#times-circle-o"><i class="mdi mdi-times-circle-o"></i> mdi-times-circle-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#tint"><i class="mdi mdi-tint"></i> mdi-tint</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#caret-square-o-down"><i class="mdi mdi-toggle-down"></i> mdi-toggle-down <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#caret-square-o-left"><i class="mdi mdi-toggle-left"></i> mdi-toggle-left <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#caret-square-o-right"><i class="mdi mdi-toggle-right"></i> mdi-toggle-right <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#caret-square-o-up"><i class="mdi mdi-toggle-up"></i> mdi-toggle-up <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#trash-o"><i class="mdi mdi-trash-o"></i> mdi-trash-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#trophy"><i class="mdi mdi-trophy"></i> mdi-trophy</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#truck"><i class="mdi mdi-truck"></i> mdi-truck</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#umbrella"><i class="mdi mdi-umbrella"></i> mdi-umbrella</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#unlock"><i class="mdi mdi-unlock"></i> mdi-unlock</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#unlock-alt"><i class="mdi mdi-unlock-alt"></i> mdi-unlock-alt</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort"><i class="mdi mdi-unsorted"></i> mdi-unsorted <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#upload"><i class="mdi mdi-upload"></i> mdi-upload</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#user"><i class="mdi mdi-user"></i> mdi-user</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#users"><i class="mdi mdi-users"></i> mdi-users</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#video-camera"><i class="mdi mdi-video-camera"></i> mdi-video-camera</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#volume-down"><i class="mdi mdi-volume-down"></i> mdi-volume-down</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#volume-off"><i class="mdi mdi-volume-off"></i> mdi-volume-off</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#volume-up"><i class="mdi mdi-volume-up"></i> mdi-volume-up</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#exclamation-triangle"><i class="mdi mdi-warning"></i> mdi-warning <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#wheelchair"><i class="mdi mdi-wheelchair"></i> mdi-wheelchair</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#wrench"><i class="mdi mdi-wrench"></i> mdi-wrench</a></div>
+                                        <div class="clearfix"></div>
+                                    </div> 
+                                </div> 
+
+                                <div class="card-box"> 
+                                    <div class="box_content">  
+                                        <div class="title ">
+                                          <h3 class="page-header icon-subheading">Web Application Icons</h3>
+                                        </div>
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-adjust"></i> fa-adjust</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-anchor"></i> fa-anchor</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-archive"></i> fa-archive</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-arrows"></i> fa-arrows</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-arrows-h"></i> fa-arrows-h</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-arrows-v"></i> fa-arrows-v</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-asterisk"></i> fa-asterisk</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-ban"></i> fa-ban</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-bar-chart-o"></i> fa-bar-chart-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-barcode"></i> fa-barcode</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-bars"></i> fa-bars</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-beer"></i> fa-beer</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-bell"></i> fa-bell</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-bell-o"></i> fa-bell-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-bolt"></i> fa-bolt</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-book"></i> fa-book</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-bookmark"></i> fa-bookmark</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-bookmark-o"></i> fa-bookmark-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-briefcase"></i> fa-briefcase</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-bug"></i> fa-bug</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-building-o"></i> fa-building-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-bullhorn"></i> fa-bullhorn</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-bullseye"></i> fa-bullseye</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-calendar"></i> fa-calendar</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-calendar-o"></i> fa-calendar-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-camera"></i> fa-camera</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-camera-retro"></i> fa-camera-retro</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-caret-square-o-down"></i> fa-caret-square-o-down</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-caret-square-o-left"></i> fa-caret-square-o-left</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-caret-square-o-right"></i> fa-caret-square-o-right</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-caret-square-o-up"></i> fa-caret-square-o-up</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-certificate"></i> fa-certificate</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-check"></i> fa-check</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-check-circle"></i> fa-check-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-check-circle-o"></i> fa-check-circle-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-check-square"></i> fa-check-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-check-square-o"></i> fa-check-square-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-circle"></i> fa-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-angle-right"></i> fa-angle-right</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-clock-o"></i> fa-clock-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-cloud"></i> fa-cloud</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-cloud-download"></i> fa-cloud-download</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-cloud-upload"></i> fa-cloud-upload</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-code"></i> fa-code</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-code-fork"></i> fa-code-fork</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-coffee"></i> fa-coffee</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-cog"></i> fa-cog</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-cogs"></i> fa-cogs</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-comment"></i> fa-comment</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-comment-o"></i> fa-comment-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-comments"></i> fa-comments</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-comments-o"></i> fa-comments-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-compass"></i> fa-compass</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-credit-card"></i> fa-credit-card</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-crop"></i> fa-crop</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-crosshairs"></i> fa-crosshairs</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-cutlery"></i> fa-cutlery</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-dashboard"></i> fa-dashboard <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-desktop"></i> fa-desktop</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-dot-circle-o"></i> fa-dot-circle-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-download"></i> fa-download</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-edit"></i> fa-edit <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-ellipsis-h"></i> fa-ellipsis-h</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-ellipsis-v"></i> fa-ellipsis-v</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-envelope"></i> fa-envelope</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-envelope-o"></i> fa-envelope-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-eraser"></i> fa-eraser</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-exchange"></i> fa-exchange</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-exclamation"></i> fa-exclamation</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-exclamation-circle"></i> fa-exclamation-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-exclamation-triangle"></i> fa-exclamation-triangle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-external-link"></i> fa-external-link</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-external-link-square"></i> fa-external-link-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-eye"></i> fa-eye</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-eye-slash"></i> fa-eye-slash</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-female"></i> fa-female</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-fighter-jet"></i> fa-fighter-jet</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-film"></i> fa-film</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-filter"></i> fa-filter</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-fire"></i> fa-fire</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-fire-extinguisher"></i> fa-fire-extinguisher</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-flag"></i> fa-flag</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-flag-checkered"></i> fa-flag-checkered</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-flag-o"></i> fa-flag-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-flash"></i> fa-flash <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-flask"></i> fa-flask</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-folder"></i> fa-folder</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-folder-o"></i> fa-folder-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-folder-open"></i> fa-folder-open</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-folder-open-o"></i> fa-folder-open-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-frown-o"></i> fa-frown-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-gamepad"></i> fa-gamepad</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-gavel"></i> fa-gavel</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-gear"></i> fa-gear <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-gears"></i> fa-gears <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-gift"></i> fa-gift</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-glass"></i> fa-glass</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-globe"></i> fa-globe</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-group"></i> fa-group <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-hdd-o"></i> fa-hdd-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-headphones"></i> fa-headphones</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-heart"></i> fa-heart</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-heart-o"></i> fa-heart-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-home"></i> fa-home</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-inbox"></i> fa-inbox</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#"><i class="fa fa-info"></i> fa-info</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#info-circle"><i class="fa fa-info-circle"></i> fa-info-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#key"><i class="fa fa-key"></i> fa-key</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#keyboard-o"><i class="fa fa-keyboard-o"></i> fa-keyboard-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#laptop"><i class="fa fa-laptop"></i> fa-laptop</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#leaf"><i class="fa fa-leaf"></i> fa-leaf</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#gavel"><i class="fa fa-legal"></i> fa-legal <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#lemon-o"><i class="fa fa-lemon-o"></i> fa-lemon-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#level-down"><i class="fa fa-level-down"></i> fa-level-down</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#level-up"><i class="fa fa-level-up"></i> fa-level-up</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#lightbulb-o"><i class="fa fa-lightbulb-o"></i> fa-lightbulb-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#location-arrow"><i class="fa fa-location-arrow"></i> fa-location-arrow</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#lock"><i class="fa fa-lock"></i> fa-lock</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#magic"><i class="fa fa-magic"></i> fa-magic</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#magnet"><i class="fa fa-magnet"></i> fa-magnet</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#share"><i class="fa fa-mail-forward"></i> fa-mail-forward <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#reply"><i class="fa fa-mail-reply"></i> fa-mail-reply <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#mail-reply-all"><i class="fa fa-mail-reply-all"></i> fa-mail-reply-all</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#male"><i class="fa fa-male"></i> fa-male</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#map-marker"><i class="fa fa-map-marker"></i> fa-map-marker</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#meh-o"><i class="fa fa-meh-o"></i> fa-meh-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#microphone"><i class="fa fa-microphone"></i> fa-microphone</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#microphone-slash"><i class="fa fa-microphone-slash"></i> fa-microphone-slash</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#minus"><i class="fa fa-minus"></i> fa-minus</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#minus-circle"><i class="fa fa-minus-circle"></i> fa-minus-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#minus-square"><i class="fa fa-minus-square"></i> fa-minus-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#minus-square-o"><i class="fa fa-minus-square-o"></i> fa-minus-square-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#mobile"><i class="fa fa-mobile"></i> fa-mobile</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#mobile"><i class="fa fa-mobile-phone"></i> fa-mobile-phone <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#money"><i class="fa fa-money"></i> fa-money</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#moon-o"><i class="fa fa-moon-o"></i> fa-moon-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#music"><i class="fa fa-music"></i> fa-music</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#pencil"><i class="fa fa-pencil"></i> fa-pencil</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#pencil-square"><i class="fa fa-pencil-square"></i> fa-pencil-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#pencil-square-o"><i class="fa fa-pencil-square-o"></i> fa-pencil-square-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#phone"><i class="fa fa-phone"></i> fa-phone</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#phone-square"><i class="fa fa-phone-square"></i> fa-phone-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#picture-o"><i class="fa fa-picture-o"></i> fa-picture-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#plane"><i class="fa fa-plane"></i> fa-plane</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#plus"><i class="fa fa-plus"></i> fa-plus</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#plus-circle"><i class="fa fa-plus-circle"></i> fa-plus-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#plus-square"><i class="fa fa-plus-square"></i> fa-plus-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#plus-square-o"><i class="fa fa-plus-square-o"></i> fa-plus-square-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#power-off"><i class="fa fa-power-off"></i> fa-power-off</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#print"><i class="fa fa-print"></i> fa-print</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#puzzle-piece"><i class="fa fa-puzzle-piece"></i> fa-puzzle-piece</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#qrcode"><i class="fa fa-qrcode"></i> fa-qrcode</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#question"><i class="fa fa-question"></i> fa-question</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#question-circle"><i class="fa fa-question-circle"></i> fa-question-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#quote-left"><i class="fa fa-quote-left"></i> fa-quote-left</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#quote-right"><i class="fa fa-quote-right"></i> fa-quote-right</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#random"><i class="fa fa-random"></i> fa-random</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#refresh"><i class="fa fa-refresh"></i> fa-refresh</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#reply"><i class="fa fa-reply"></i> fa-reply</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#reply-all"><i class="fa fa-reply-all"></i> fa-reply-all</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#retweet"><i class="fa fa-retweet"></i> fa-retweet</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#road"><i class="fa fa-road"></i> fa-road</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#rocket"><i class="fa fa-rocket"></i> fa-rocket</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#rss"><i class="fa fa-rss"></i> fa-rss</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#rss-square"><i class="fa fa-rss-square"></i> fa-rss-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#search"><i class="fa fa-search"></i> fa-search</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#search-minus"><i class="fa fa-search-minus"></i> fa-search-minus</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#search-plus"><i class="fa fa-search-plus"></i> fa-search-plus</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#share"><i class="fa fa-share"></i> fa-share</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#share-square"><i class="fa fa-share-square"></i> fa-share-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#share-square-o"><i class="fa fa-share-square-o"></i> fa-share-square-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#shield"><i class="fa fa-shield"></i> fa-shield</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#shopping-cart"><i class="fa fa-shopping-cart"></i> fa-shopping-cart</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sign-in"><i class="fa fa-sign-in"></i> fa-sign-in</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sign-out"><i class="fa fa-sign-out"></i> fa-sign-out</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#signal"><i class="fa fa-signal"></i> fa-signal</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sitemap"><i class="fa fa-sitemap"></i> fa-sitemap</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#smile-o"><i class="fa fa-smile-o"></i> fa-smile-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort"><i class="fa fa-sort"></i> fa-sort</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-alpha-asc"><i class="fa fa-sort-alpha-asc"></i> fa-sort-alpha-asc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-alpha-desc"><i class="fa fa-sort-alpha-desc"></i> fa-sort-alpha-desc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-amount-asc"><i class="fa fa-sort-amount-asc"></i> fa-sort-amount-asc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-amount-desc"><i class="fa fa-sort-amount-desc"></i> fa-sort-amount-desc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-asc"><i class="fa fa-sort-asc"></i> fa-sort-asc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-desc"><i class="fa fa-sort-desc"></i> fa-sort-desc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-asc"><i class="fa fa-sort-down"></i> fa-sort-down <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-numeric-asc"><i class="fa fa-sort-numeric-asc"></i> fa-sort-numeric-asc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-numeric-desc"><i class="fa fa-sort-numeric-desc"></i> fa-sort-numeric-desc</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort-desc"><i class="fa fa-sort-up"></i> fa-sort-up <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#spinner"><i class="fa fa-spinner"></i> fa-spinner</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#square"><i class="fa fa-square"></i> fa-square</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#square-o"><i class="fa fa-square-o"></i> fa-square-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#star"><i class="fa fa-star"></i> fa-star</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#star-half"><i class="fa fa-star-half"></i> fa-star-half</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#star-half-o"><i class="fa fa-star-half-empty"></i> fa-star-half-empty <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#star-half-o"><i class="fa fa-star-half-full"></i> fa-star-half-full <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#star-half-o"><i class="fa fa-star-half-o"></i> fa-star-half-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#star-o"><i class="fa fa-star-o"></i> fa-star-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#subscript"><i class="fa fa-subscript"></i> fa-subscript</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#suitcase"><i class="fa fa-suitcase"></i> fa-suitcase</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sun-o"><i class="fa fa-sun-o"></i> fa-sun-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#superscript"><i class="fa fa-superscript"></i> fa-superscript</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#tablet"><i class="fa fa-tablet"></i> fa-tablet</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#tachometer"><i class="fa fa-tachometer"></i> fa-tachometer</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#tag"><i class="fa fa-tag"></i> fa-tag</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#tags"><i class="fa fa-tags"></i> fa-tags</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#tasks"><i class="fa fa-tasks"></i> fa-tasks</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#terminal"><i class="fa fa-terminal"></i> fa-terminal</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#thumb-tack"><i class="fa fa-thumb-tack"></i> fa-thumb-tack</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#thumbs-down"><i class="fa fa-thumbs-down"></i> fa-thumbs-down</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#thumbs-o-down"><i class="fa fa-thumbs-o-down"></i> fa-thumbs-o-down</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#thumbs-o-up"><i class="fa fa-thumbs-o-up"></i> fa-thumbs-o-up</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#thumbs-up"><i class="fa fa-thumbs-up"></i> fa-thumbs-up</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#ticket"><i class="fa fa-ticket"></i> fa-ticket</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#times"><i class="fa fa-times"></i> fa-times</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#times-circle"><i class="fa fa-times-circle"></i> fa-times-circle</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#times-circle-o"><i class="fa fa-times-circle-o"></i> fa-times-circle-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#tint"><i class="fa fa-tint"></i> fa-tint</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#caret-square-o-down"><i class="fa fa-toggle-down"></i> fa-toggle-down <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#caret-square-o-left"><i class="fa fa-toggle-left"></i> fa-toggle-left <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#caret-square-o-right"><i class="fa fa-toggle-right"></i> fa-toggle-right <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#caret-square-o-up"><i class="fa fa-toggle-up"></i> fa-toggle-up <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#trash-o"><i class="fa fa-trash-o"></i> fa-trash-o</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#trophy"><i class="fa fa-trophy"></i> fa-trophy</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#truck"><i class="fa fa-truck"></i> fa-truck</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#umbrella"><i class="fa fa-umbrella"></i> fa-umbrella</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#unlock"><i class="fa fa-unlock"></i> fa-unlock</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#unlock-alt"><i class="fa fa-unlock-alt"></i> fa-unlock-alt</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#sort"><i class="fa fa-unsorted"></i> fa-unsorted <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#upload"><i class="fa fa-upload"></i> fa-upload</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#user"><i class="fa fa-user"></i> fa-user</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#users"><i class="fa fa-users"></i> fa-users</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#video-camera"><i class="fa fa-video-camera"></i> fa-video-camera</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#volume-down"><i class="fa fa-volume-down"></i> fa-volume-down</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#volume-off"><i class="fa fa-volume-off"></i> fa-volume-off</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#volume-up"><i class="fa fa-volume-up"></i> fa-volume-up</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#exclamation-triangle"><i class="fa fa-warning"></i> fa-warning <span class="text-muted">(alias)</span></a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#wheelchair"><i class="fa fa-wheelchair"></i> fa-wheelchair</a></div>
+                                
+                                        <div class="icon-box col-md-3 col-sm-4"><a class="agile-icon" href="#wrench"><i class="fa fa-wrench"></i> fa-wrench</a></div>
+                                        <div class="clearfix"></div>
+                                    </div> 
+                                </div> 
+
+
+                     </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <footer class="footer text-right">
+                   2019 © <span class="text-danger">Material Dashboard v1.1.</span>
+                    <span class="pull-right">
+                        <i class="fa fa-heart text- text-danger"></i> by <span class="text-danger">Quintulabs.com</span>
+                    </span>
+                </footer>
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+        </div>
+        <!-- END wrapper -->
+
+        <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <script src="assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/js/plugins/datatables/dataTables.bootstrap.js"></script>
+        <script src="assets/js/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="assets/js/plugins/datatables/buttons.bootstrap.min.js"></script>
+        <script src="assets/js/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="assets/js/plugins/datatables/responsive.bootstrap.min.js"></script>
+
+        <script src="assets/js/plugins/toast/jquery.toast.js" type="text/javascript"></script>
+        <script src="assets/js/plugins/select2/select2.min.js" type="text/javascript"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+        <script src="assets/js/custom.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#datatable').DataTable();
+            });
+
+            // Select2
+            $(".select2").select2();
+        </script>
+
+    </body>
+</html>

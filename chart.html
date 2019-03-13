@@ -114,7 +114,6 @@
                                     <i class=" mdi mdi-arrow-expand-all"></i>
                                 </a>
                             </li>
-                            <li><a href="login.html" class="nav-link logout"> <span class="d-none d-sm-inline">Logout</span><i class="fa fa-sign-out"></i></a></li>
                             <li class="dropdown user-box">
                                 <a href="" class="dropdown-toggle waves-effect waves-light user-link" data-toggle="dropdown" aria-expanded="true">
                                     <img src="assets/images/user.JPG" alt="user-img" data-toggle="tooltip"  class="img-circle user-img">
@@ -217,7 +216,7 @@
                                         <!-- Page Header-->
                         <header class="page-header">
                            <div class="container-fluid">
-                              <h2 class="no-margin-bottom">Dashboard</h2>
+                              <h2 class="no-margin-bottom">Chart</h2>
                             </div>
                         </header>
                 <!-- Start content -->
@@ -226,7 +225,189 @@
 
                       <!-- Dashboard Counts Section-->
 
+                           <div class="row">
+                               <div class="col-md-6">
+                                <div class="card-box">
+                                    <h4 class="header-title m-t-0 ">Doughnut Chart</h4>
+                                    <canvas id="myChart" width="50%" height="50%"></canvas>
+                                    <script>
+                                        new Chart(document.getElementById("myChart"), {
+                                            type: 'doughnut',
+                                            data: {
+                                                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                                                datasets: [{
+                                                label: "My First dataset",
+                                                backgroundColor: ["#70b9eb", "#f3b760","#46c37b","#f5707a","#B22222","#FF6347","#FFD700 "],
+                                                
+                                                data: [0, 10, 5, 2, 20, 30, 45],
+                                                }]
+                                            },
+                                           options: {
+                                                title: {
+                                                    display: false,
+                                                    text: 'Order Chart'
+                                                }
+                                            }
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                              <div class="col-md-6">
+                                <div class="card-box">
+                                    <h4 class="header-title m-t-0 ">Pie Chart</h4>
+                                    <canvas id="pieChart" width="50%" height="50%"></canvas>
+                                    <script>
+                                        new Chart(document.getElementById("pieChart"), {
+                                            type: 'pie',
+                                            data: {
+                                                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                                                datasets: [{
+                                                label: "My First dataset",
+                                                backgroundColor: ["#70b9eb", "#f3b760","#46c37b","#f5707a","#B22222","#FF6347","#FFD700 "],
+                                                
+                                                data: [0, 10, 5, 2, 20, 30, 45],
+                                                }]
+                                            },
+                                           options: {
+                                                title: {
+                                                    display: false,
+                                                    text: 'Order Chart'
+                                                }
+                                            }
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                             <div class="col-lg-6">                             
+                                <div class="row">
+                                    <div class="col-md-12">
+                                         <div class="card-box">
+                                            <h4 class="header-title m-t-0 "> Line CHART</h4>
+                                            <canvas id="lineChart" width="50%"></canvas>
+                                            <script>
+                                                new Chart(document.getElementById("lineChart"), {
+                                                    type: 'line',
+                                                    data: {
+                                                        labels: ["January", "February", "March", "April", "May", "June", "July"],
+                                                        datasets: [{
+                                                        label: "My First dataset",
+                                                        backgroundColor: ["#70b9eb", "#f3b760","#46c37b","#f5707a","#B22222","#FF6347","#FFD700 "],
+                                                        
+                                                        data: [0, 10, 5, 2, 20, 30, 45],
+                                                        }]
+                                                    },
+                                                   options: {
+                                                        title: {
+                                                            display: false,
+                                                            text: 'Order Chart'
+                                                        }
+                                                    }
+                                                });
+                                            </script>
+                                        </div>
 
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="col-lg-6">                             
+                                <div class="row">
+                                    <div class="col-md-12">
+                                         <div class="card-box">
+                                            <h4 class="header-title m-t-0 ">Bar CHART</h4>
+                                            <canvas id="barChart" width="50%"></canvas>
+                                            <script>
+                                                new Chart(document.getElementById("barChart"), {
+                                                    type: 'bar',
+                                                    data: {
+                                                        labels: ["January", "February", "March", "April", "May", "June", "July"],
+                                                        datasets: [{
+                                                        label: "My First dataset",
+                                                        backgroundColor: ["#70b9eb", "#f3b760","#46c37b","#f5707a","#B22222","#FF6347","#FFD700 "],
+                                                        
+                                                        data: [0, 10, 5, 2, 20, 30, 45],
+                                                        }]
+                                                    },
+                                                   options: {
+                                                        title: {
+                                                            display: false,
+                                                            text: 'Order Chart'
+                                                        }
+                                                    }
+                                                });
+                                            </script>
+                                        </div>
+
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="col-lg-6">                             
+                                <div class="row">
+                                    <div class="col-md-12">
+                                         <div class="card-box">
+                                            <h4 class="header-title m-t-0 ">Radar CHART</h4>
+                                            <canvas id="radarChart" width="50%"></canvas>
+                                            <script>
+                                                new Chart(document.getElementById("radarChart"), {
+                                                    type: 'radar',
+                                                    data: {
+                                                        labels: ["January", "February", "March", "April", "May", "June", "July"],
+                                                        datasets: [{
+                                                        label: "My First dataset",
+                                                        backgroundColor: ["#70b9eb", "#f3b760","#46c37b","#f5707a","#B22222","#FF6347","#FFD700 "],
+                                                        
+                                                        data: [0, 10, 5, 2, 20, 30, 45],
+                                                        }]
+                                                    },
+                                                   options: {
+                                                        title: {
+                                                            display: false,
+                                                            text: 'Order Chart'
+                                                        }
+                                                    }
+                                                });
+                                            </script>
+                                        </div>
+
+                                    </div>
+                                </div>                               
+                            </div>
+
+                            <div class="col-lg-6">                             
+                                <div class="row">
+                                    <div class="col-md-12">
+                                         <div class="card-box">
+                                            <h4 class="header-title m-t-0 ">Polar Area CHART</h4>
+                                            <canvas id="polarAreaChart" width="50%"></canvas>
+                                            <script>
+                                                new Chart(document.getElementById("polarAreaChart"), {
+                                                    type: 'polarArea',
+                                                    data: {
+                                                        labels: ["January", "February", "March", "April", "May", "June", "July"],
+                                                        datasets: [{
+                                                        label: "My First dataset",
+                                                        backgroundColor: ["#70b9eb", "#f3b760","#46c37b","#f5707a","#B22222","#FF6347","#FFD700 "],
+                                                        
+                                                        data: [0, 10, 5, 2, 20, 30, 45],
+                                                        }]
+                                                    },
+                                                   options: {
+                                                        title: {
+                                                            display: false,
+                                                            text: 'Order Chart'
+                                                        }
+                                                    }
+                                                });
+                                            </script>
+                                        </div>
+
+                                    </div>
+                                </div>                               
+                            </div>
+
+
+                        </div>
                           
                            
 

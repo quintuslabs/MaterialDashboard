@@ -114,8 +114,7 @@
                                     <i class=" mdi mdi-arrow-expand-all"></i>
                                 </a>
                             </li>
-                            <li><a href="login.html" class="nav-link logout"> <span class="d-none d-sm-inline">Logout</span><i class="fa fa-sign-out"></i></a></li>
-                            <li class="dropdown user-box">
+                             <li class="dropdown user-box">
                                 <a href="" class="dropdown-toggle waves-effect waves-light user-link" data-toggle="dropdown" aria-expanded="true">
                                     <img src="assets/images/user.JPG" alt="user-img" data-toggle="tooltip"  class="img-circle user-img">
                                 </a>
@@ -217,7 +216,7 @@
                                         <!-- Page Header-->
                         <header class="page-header">
                            <div class="container-fluid">
-                              <h2 class="no-margin-bottom">Dashboard</h2>
+                              <h2 class="no-margin-bottom">Validation Forms</h2>
                             </div>
                         </header>
                 <!-- Start content -->
@@ -225,10 +224,115 @@
                     <div class="container">
 
                       <!-- Dashboard Counts Section-->
-
-
-                          
-                           
+                        <div id="page-wrapper">
+							<div class="main-page">
+								<div class="forms validation">
+									
+									<div class="form-three card-box">
+										<div data-example-id="form-validation-states"> 
+											<form> 
+												<div class="form-group has-success"> 
+													<label class="control-label" for="inputSuccess1">Input with success</label> 
+													<input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2"> 
+													<span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span> 
+												</div>
+												 <div class="form-group has-warning"> 
+												 	<label class="control-label" for="inputWarning1">Input with warning</label> 
+												 	<input type="text" class="form-control" id="inputWarning1"> 
+												 </div> 
+												 <div class="form-group has-error"> 
+												 	<label class="control-label" for="inputError1">Input with error</label> 
+												 	<input type="text" class="form-control" id="inputError1"> 
+												 </div> 
+												 	
+											</form> 
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 validation-grids card-box" data-example-id="basic-forms"> 
+											<div class="form-title">
+												<h4>Register Form :</h4>
+											</div>
+											<div class="form-body">
+												<form data-toggle="validator">
+													<div class="form-group">
+														<input type="text" class="form-control" id="inputName" placeholder="Username" required>
+													</div>
+													<div class="form-group has-feedback">
+														<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+														<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+														<span class="help-block with-errors">Please enter a valid email address</span>
+													</div>
+													<div class="form-group">
+													  <input type="password" data-toggle="validator" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+													  <span class="help-block">Minimum of 6 characters</span>
+													</div>
+													<div class="form-group">
+													  <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm password" required>
+													  <div class="help-block with-errors"></div>
+													</div>
+													
+													<div class="form-group">
+														
+													</div>
+													<div class="form-group">
+														<button type="submit" class="btn btn-primary disabled">Submit</button>
+													</div>
+												</form>
+											</div>
+										</div>
+										<div class="col-md-6 validation-grids validation-grids-right">
+											<div class="card-box" data-example-id="basic-forms"> 
+												<div class="form-title">
+													<h4>Login form :</h4>
+												</div>
+												<div class="form-body">
+													<form data-toggle="validator">
+														<div class="form-group has-feedback">
+															<input type="email" class="form-control" id="inputEmail" placeholder="Enter Your Email" data-error="Bruh, that email address is invalid" required>
+															<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+														</div>
+														<div class="form-group">
+															<input type="password" data-toggle="validator" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+														</div>
+														<div class="bottom">
+															
+															<div class="form-group">
+																<button type="submit" class="btn btn-primary disabled">Login</button>
+															</div>
+															<div class="clearfix"> </div>
+														</div>
+													</form>
+												</div>
+											</div>
+											<div class="inline-form card-box">
+												<div class="form-title">
+													<h4>Recover form :</h4>
+												</div>
+												<div class="form-body">
+													<form data-toggle="validator">
+														<div class="form-group has-feedback">
+															<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+															<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+														</div>
+														<div class="form-group">
+															<input type="text" data-toggle="validator" data-minlength="6" class="form-control" id="inputPassword" placeholder="Enter your phone number" required>
+														</div>
+														<div class="bottom">
+															<div class="form-group">
+																<button type="submit" class="btn btn-primary disabled">Login</button>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+										<div class="clearfix"> </div>	
+									</div>
+								</div>
+							</div>
+						</div> 
+	                           
 
 
                      </div> <!-- container -->
